@@ -14,7 +14,7 @@ def load_system(filepath,system_name):
 
         return galaxy[system_name] 
 
-SYSTEM_CONFIG = load_system('galaxy.json','figure_eight_three_body')
+SYSTEM_CONFIG = load_system('galaxy.json','figure_eight_three_body')    #change this to select a galaxy
 
 
 class planet():
@@ -33,7 +33,6 @@ class planet():
         planet.count += 1
         self.id = planet.count
 
-
     def update_velocity(self,all_planets, dt=3600):
         acc = np.array([0.0,0.0])
         for other in all_planets:
@@ -48,8 +47,6 @@ class planet():
 
     def update_position(self,dt=3600):
         self.position = self.position + dt * self.velocity
-
-
 
 
 
