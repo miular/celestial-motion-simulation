@@ -9,7 +9,7 @@
 
 ### 1. 运行模拟
 
-打开项目核心脚本（ `celestical motion simulation.py`），通过修改配置来选择你想模拟的星系：
+打开项目核心脚本（ `celestial motion simulation.py`），通过修改配置来选择你想模拟的星系：
 
 ```python
 # 修改第二个参数为 galaxy.json 中已有的星系名称
