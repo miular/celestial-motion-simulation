@@ -1,0 +1,48 @@
+{
+  "sun_earth_moon": [
+    {"name": "Sun", "mass": 1.989e30, "position": [0.0, 0.0], "velocity": [0.0, 0.0], "color": "orange", "size": 150},
+    {"name": "Earth", "mass": 5.972e24, "position": [1.496e11, 0.0], "velocity": [0.0, 29800.0], "color": "blue", "size": 80},
+    {"name": "Moon", "mass": 7.349e22, "position": [1.499844e11, 0.0], "velocity": [0.0, 30822.0], "color": "grey", "size": 30}
+  ],
+  
+  "inner_planets": [
+    {"name": "Sun", "mass": 1.989e30, "position": [0.0, 0.0], "velocity": [0.0, 0.0], "color": "orange", "size": 150},
+    {"name": "Mercury", "mass": 3.301e23, "position": [5.79e10, 0.0], "velocity": [0.0, 47360.0], "color": "gray", "size": 30},
+    {"name": "Venus", "mass": 4.867e24, "position": [1.082e11, 0.0], "velocity": [0.0, 35020.0], "color": "goldenrod", "size": 60},
+    {"name": "Earth", "mass": 5.972e24, "position": [1.496e11, 0.0], "velocity": [0.0, 29780.0], "color": "blue", "size": 70},
+    {"name": "Mars", "mass": 6.417e23, "position": [2.279e11, 0.0], "velocity": [0.0, 24070.0], "color": "red", "size": 50}
+  ],
+
+  "binary_star": [
+    {"name": "Star A", "mass": 1.0e30, "position": [-5.0e10, 0.0], "velocity": [0.0, -15000.0], "color": "crimson", "size": 120},
+    {"name": "Star B", "mass": 1.0e30, "position": [5.0e10, 0.0], "velocity": [0.0, 15000.0], "color": "deepskyblue", "size": 120},
+    {"name": "Planet X", "mass": 5.0e24, "position": [0.0, 2.0e11], "velocity": [-18000.0, 0.0], "color": "limegreen", "size": 40}
+  ],
+
+  "figure_eight_three_body": [
+    {"name": "Alpha", "mass": 1.0e30, "position": [-9.7000436e10, 2.4308753e10], "velocity": [4.66205e3, 4.32365e3], "color": "crimson", "size": 100},
+    {"name": "Beta",  "mass": 1.0e30, "position": [9.7000436e10, -2.4308753e10],  "velocity": [4.66205e3, 4.32365e3], "color": "deepskyblue", "size": 100},
+    {"name": "Gamma", "mass": 1.0e30, "position": [0.0, 0.0],                   "velocity": [-9.3241e3, -8.6473e3], "color": "gold", "size": 100}
+  ],
+
+  "trojan_asteroids": [
+    {"name": "Sun",            "mass": 1.989e30, "position": [0.0, 0.0],          "velocity": [0.0, 0.0],        "color": "orange", "size": 180},
+    {"name": "Jupiter",        "mass": 1.898e27, "position": [7.785e11, 0.0],     "velocity": [0.0, 13070.0],    "color": "peru", "size": 100},
+    {"name": "Trojan_L4_Greek","mass": 1.0e20,   "position": [3.8925e11, 6.742e11],"velocity": [-11319.0, 6535.0],"color": "springgreen", "size": 30},
+    {"name": "Trojan_L5_Trojan","mass": 1.0e20,  "position": [3.8925e11, -6.742e11],"velocity": [11319.0, 6535.0], "color": "orchid", "size": 30}
+  ],
+
+  "circumbinary_planet": [
+    {"name": "Primary_Star",   "mass": 2.0e30, "position": [-3.0e10, 0.0], "velocity": [0.0, -10000.0], "color": "orangered", "size": 120},
+    {"name": "Secondary_Star", "mass": 1.0e30, "position": [6.0e10, 0.0],  "velocity": [0.0, 20000.0],  "color": "khaki", "size": 90},
+    {"name": "Tatooine",       "mass": 6.0e24, "position": [3.5e11, 0.0],  "velocity": [0.0, 23800.0],  "color": "cyan", "size": 50}
+  ],
+
+  "rosette_ring": [
+    {"name": "Central_BlackHole", "mass": 5.0e30, "position": [0.0, 0.0],      "velocity": [0.0, 0.0],      "color": "purple", "size": 160},
+    {"name": "Node_North",        "mass": 1.0e25, "position": [0.0, 2.0e11],  "velocity": [-40800.0, 0.0], "color": "red", "size": 50},
+    {"name": "Node_South",        "mass": 1.0e25, "position": [0.0, -2.0e11], "velocity": [40800.0, 0.0],  "color": "blue", "size": 50},
+    {"name": "Node_East",         "mass": 1.0e25, "position": [2.0e11, 0.0],  "velocity": [0.0, 40800.0],  "color": "green", "size": 50},
+    {"name": "Node_West",         "mass": 1.0e25, "position": [-2.0e11, 0.0], "velocity": [0.0, -40800.0], "color": "yellow", "size": 50}
+  ]
+}
