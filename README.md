@@ -47,5 +47,3 @@ SYSTEM_CONFIG = load_system('galaxy.json', 'sun_earth_moon')
 -   **[三体实时演算 | Three-Body problem](https://steamcommunity.com/sharedfiles/filedetails/?id=3509243656)** —— _by SYKM_
     
 
-
-```
