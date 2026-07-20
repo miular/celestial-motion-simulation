@@ -451,6 +451,10 @@ select:focus-visible {
   opacity: 0;
 }
 
+.body-label[hidden] {
+  display: none;
+}
+
 .error-banner {
   position: absolute;
   top: 88px;

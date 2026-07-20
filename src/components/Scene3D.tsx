@@ -276,15 +276,15 @@ export function Scene3D({
 
   useEffect(() => {
     if (gridRef.current) gridRef.current.visible = showGrid;
-  }, [showGrid]);
+  }, [showGrid, systemKey]);
 
   useEffect(() => {
     trailLinesRef.current.forEach((line) => { line.visible = showTrails; });
-  }, [showTrails]);
+  }, [showTrails, systemKey]);
 
   useEffect(() => {
     labelElementsRef.current.forEach((label) => { label.hidden = !showLabels; });
-  }, [showLabels]);
+  }, [showLabels, systemKey]);
 
   useEffect(() => {
     bodyMeshesRef.current.forEach((mesh, index) => {
@@ -293,7 +293,7 @@ export function Scene3D({
       material.transparent = index !== selectedIndex;
       mesh.scale.setScalar(index === selectedIndex ? 1.28 : 1);
     });
-  }, [selectedIndex]);
+  }, [selectedIndex, systemKey]);
 
   return <div className="scene-mount" ref={mountRef} role="img" aria-label="可旋转的三维天体轨道模拟场景" />;
 }

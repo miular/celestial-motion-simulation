@@ -51,7 +51,11 @@ export default function App() {
         onTogglePanel={() => setPanelOpen((value) => !value)}
       />
 
-      <div className="body-panel-wrapper" aria-hidden={!panelOpen}>
+      <div
+        className="body-panel-wrapper"
+        aria-hidden={!panelOpen}
+        {...(!panelOpen ? { inert: "" } : {})}
+      >
         <BodyPanel bodies={bodies} selectedIndex={selectedIndex} onSelect={setSelectedIndex} />
       </div>
 
