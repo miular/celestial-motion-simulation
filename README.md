@@ -20,6 +20,16 @@ npm run build
 npm run preview
 ```
 
+## GitHub Pages 部署
+
+项目已通过 GitHub Actions 配置自动部署。推送到 `main` 分支后，工作流会安装依赖、构建 `dist` 并发布到 GitHub Pages。
+
+首次部署前，在仓库的 **Settings → Pages → Build and deployment** 中，将 **Source** 设置为 **GitHub Actions**。部署成功后访问：
+
+<https://miular.github.io/celestial-motion-simulation/>
+
+也可以在仓库的 **Actions → Deploy to GitHub Pages → Run workflow** 中手动触发部署。
+
 可用功能：
 
 - 三维万有引力与 Velocity Verlet 积分

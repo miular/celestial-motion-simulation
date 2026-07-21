@@ -1,0 +1,69 @@
+- main [ref=e3]:
+  - region "三维轨道观测区" [ref=e4]:
+    - img "可旋转的三维天体轨道模拟场景" [ref=e5]:
+      - generic: Helios
+      - generic: Aster
+      - generic: Cinder
+  - generic [ref=e7]:
+    - heading "Celestial Motion" [level=1] [ref=e8]
+    - generic [ref=e9]:
+      - time [ref=e10]: Day 0.0
+      - combobox "选择星系" [ref=e11] [cursor=pointer]:
+        - option "Inclined Triple" [selected]
+        - option "Sun · Earth · Moon"
+        - option "Inner Planets"
+        - option "Binary Star"
+        - option "Figure Eight"
+        - option "Trojan Asteroids"
+        - option "Circumbinary"
+        - option "Rosette Ring"
+      - button "显示或隐藏天体信息" [expanded] [ref=e12] [cursor=pointer]
+  - complementary "天体信息" [ref=e16]:
+    - generic [ref=e17]:
+      - heading "Selected body" [level=2] [ref=e18]
+      - strong [ref=e21]: Helios
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - term [ref=e24]: Mass
+          - definition [ref=e25]: 1.989e+30 kg
+        - generic [ref=e26]:
+          - term [ref=e27]: Speed
+          - definition [ref=e28]: 0.000 km/s
+        - generic [ref=e29]:
+          - term [ref=e30]: Position
+          - definition [ref=e31]:
+            - generic [ref=e32]:
+              - generic [ref=e33]: X
+              - text: 0.0000 AU
+            - generic [ref=e34]:
+              - generic [ref=e35]: "Y"
+              - text: 0.0000 AU
+            - generic [ref=e36]:
+              - generic [ref=e37]: Z
+              - text: 0.0000 AU
+    - generic [ref=e38]:
+      - heading "Bodies" [level=2] [ref=e39]
+      - generic [ref=e40]:
+        - button "Helios 1.0 M☉" [pressed] [ref=e41] [cursor=pointer]:
+          - generic [ref=e43]: Helios
+          - generic [ref=e44]: 1.0 M☉
+        - button "Aster 0.0000030 M☉" [ref=e45] [cursor=pointer]:
+          - generic [ref=e47]: Aster
+          - generic [ref=e48]: 0.0000030 M☉
+        - button "Cinder 3.2e-7 M☉" [ref=e49] [cursor=pointer]:
+          - generic [ref=e51]: Cinder
+          - generic [ref=e52]: 3.2e-7 M☉
+  - generic "模拟控制" [ref=e53]:
+    - generic [ref=e54]:
+      - button "Pause" [ref=e55] [cursor=pointer]
+      - button "Step" [disabled] [ref=e60]
+      - button "Reset" [ref=e64] [cursor=pointer]
+    - generic "模拟速度" [ref=e70]:
+      - button "1×" [ref=e71] [cursor=pointer]
+      - button "6×" [ref=e72] [cursor=pointer]
+      - button "24×" [pressed] [ref=e73] [cursor=pointer]
+      - button "96×" [ref=e74] [cursor=pointer]
+    - generic [ref=e76]:
+      - button "Trails" [pressed] [ref=e77] [cursor=pointer]
+      - button "Labels" [pressed] [ref=e80] [cursor=pointer]
+      - button "Grid" [pressed] [ref=e83] [cursor=pointer]
