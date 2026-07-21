@@ -1,4 +1,10 @@
 {
+  "inclined_triple": [
+    {"name": "Helios", "mass": 1.989e30, "position": [0.0, 0.0, 0.0], "velocity": [0.0, -0.064, -0.039], "color": "#FFB547", "size": 180},
+    {"name": "Aster", "mass": 5.972e24, "position": [1.496e11, 0.0, 0.0], "velocity": [0.0, 25100.0, 15900.0], "color": "#5FE0C1", "size": 78},
+    {"name": "Cinder", "mass": 6.417e23, "position": [-2.20e11, 0.0, 3.20e10], "velocity": [2800.0, -20500.0, -6100.0], "color": "#E0644B", "size": 58}
+  ],
+
   "sun_earth_moon": [
     {"name": "Sun", "mass": 1.989e30, "position": [0.0, 0.0], "velocity": [0.0, 0.0], "color": "orange", "size": 150},
     {"name": "Earth", "mass": 5.972e24, "position": [1.496e11, 0.0], "velocity": [0.0, 29800.0], "color": "blue", "size": 80},

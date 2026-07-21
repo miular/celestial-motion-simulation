@@ -1,49 +1,66 @@
+# 天体轨道运动模拟器
 
- # 天体轨道运动模拟器
+一个同时提供浏览器三维版本和 Python 二维版本的天体 N 体运动模拟项目。
 
-一个基于python语言的轻量级、直观的天体运动物理模拟项目。
+## 网页三维版
 
+三维版使用 React、TypeScript、Three.js 和 Web Worker：物理计算在后台线程中运行，Three.js 负责空间渲染、轨迹和相机交互。
 
-
-##  如何开始
-
-### 1. 运行模拟
-
-打开项目核心脚本（ `celestial motion simulation.py`），通过修改配置来选择你想模拟的星系：
-
-```python
-# 修改第二个参数为 galaxy.json 中已有的星系名称
-SYSTEM_CONFIG = load_system('galaxy.json', 'sun_earth_moon')
+```bash
+npm install
+npm run dev
 ```
 
-### 2. 自定义星系
+打开终端显示的本地地址，默认通常是 <http://127.0.0.1:5173/>。
 
-你可以在 `galaxy.json` 中自行添加全新的天体配置。格式参考如下：
+生产构建：
 
+```bash
+npm run build
+npm run preview
+```
+
+可用功能：
+
+- 三维万有引力与 Velocity Verlet 积分
+- 播放、暂停、单步、重置和四档速度
+- 鼠标或触控旋转视角、滚轮缩放
+- 三维轨迹、天体标签和参考网格开关
+- 点击天体查看质量、速度和三轴坐标
+- 星系方案即时切换
+- 桌面与移动端自适应布局
+- 物理计算 Web Worker，不阻塞渲染线程
+
+## 星系配置
+
+所有方案都保存在 `galaxy.json`。三维配置使用三个坐标分量：
 
 ```json
 {
-  "sun_earth_moon": [
-{"name": "Sun", "mass": 1.989e30, "position": [0.0, 0.0], "velocity": [0.0, 0.0], "color": "orange", "size": 150},
-{"name": "Earth", "mass": 5.972e24, "position": [1.496e11, 0.0], "velocity": [0.0, 29800.0], "color": "blue", "size": 80},
-{"name": "Moon", "mass": 7.349e22, "position": [1.499844e11, 0.0], "velocity": [0.0, 30822.0], "color": "grey", "size": 30}
-]
+  "name": "Aster",
+  "mass": 5.972e24,
+  "position": [1.496e11, 0.0, 0.0],
+  "velocity": [0.0, 25100.0, 15900.0],
+  "color": "#5FE0C1",
+  "size": 78
 }
-
 ```
-- **注意** ：由于万有引力在小质量物体的作用不明显，所以尽可能设置合理质量与初速度。
 
-##  开发计划
+旧的二维 `[x, y]` 坐标仍然兼容，加载时会自动转换为 `[x, y, 0]`。如果所有天体的 `z` 和 `vz` 都为零，运动仍会保持在同一个平面。
 
--   [x] 二维物理与轨道演算 (2D)
-    
--   [ ] 三维空间物理模拟 (3D) _(看我水平提升到这么高再说hh)_
-       
+## 质量检查
 
-##  灵感来源
+```bash
+npm run typecheck
+npm run lint
+npm test
+npm run build
+```
 
-本项目的灵感来源于 Wallpaper Engine 上的动态壁纸作品：
+## Python 二维版
 
--   **[三体实时演算 | Three-Body problem](https://steamcommunity.com/sharedfiles/filedetails/?id=3509243656)** —— _by SYKM_
-    
+原始版本保留在 `celestial_motion_simulation.py`，依赖 NumPy 和 Matplotlib。修改其中的星系名称即可选择 `galaxy.json` 中的方案。由于 Python 版本仍是二维实现，请选择使用二维坐标的旧方案。
 
+## 灵感来源
+
+- [三体实时演算 | Three-Body problem](https://steamcommunity.com/sharedfiles/filedetails/?id=3509243656) — SYKM
